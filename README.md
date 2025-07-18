@@ -8,7 +8,6 @@ This project explores customer churn patterns using SQL queries on a banking dat
 
 ## Project Structure
 
-1. Database Setup
 * Database creation: Created a database named `churn`.
 * Table Creation: A table named `customers` is created to store the churn customers data.
   
@@ -112,9 +111,9 @@ group by isactivemember;
 ```
 **Is Number of years with Bank related to churn?**
 ```sql
-select tenue,count(*) as Total,sum(case when exited = 1 then 1 else 0 end) as churned
+select tenure,count(*) as Total,sum(case when exited = 1 then 1 else 0 end) as churned
 from Customers
-group by tenue
+group by tenure
 order by churned desc;
 ```
 **Does income level affect churn?**
@@ -144,4 +143,10 @@ FROM GeoChurn)
 SELECT *
 FROM GeoChurnWithRate;
 ```
+## Key Insights
+1. Germany had the highest churn rate among all geographies.
+2. Customers aged 50 and above were more likely to churn.
+3. Customers with multiple products or inactive accounts showed higher exit rates.
+4. Low balance customers had the lowest churn, possibly due to lower engagement.
+
 
