@@ -12,6 +12,22 @@ This project explores customer churn patterns using SQL queries on a banking dat
 * Database creation: Created a database named churn.
 * Table Creation: A table named customers is created to store the churn customers data.
   
-<pre> ```sql -- Create the database CREATE DATABASE churn; -- Create the customers table CREATE TABLE customers ( RowNumber INT, CustomerId BIGINT, Surname VARCHAR(50), CreditScore INT, Geography VARCHAR(50), Gender VARCHAR(10), Age INT, Tenure INT, Balance NUMERIC(12,2), NumOfProducts INT, HasCrCard INT, IsActiveMember INT, EstimatedSalary NUMERIC(12,2), Exited INT ); ``` </pre>
+<pre> ```sql -- create database churn;
 
+--create table employees(
+RowNumber int,
+Customerid bigint,
+Surname varchar(50),
+CreditScore int,
+Geography varchar(50),
+Gender varchar(10),
+Age int,
+Tenue int,
+Balance numeric(12,2),
+NumOfProducts int,
+HasCrCard int,
+ISActiveMember int,
+EstimatedSalary numeric(12,2),
+Exited int
+); ``` </pre>
 
