@@ -40,7 +40,8 @@ CREATE TABLE customers (
     Exited INT
 );
 ```
--- Checking my data 
+**Checking my data** 
 ```sql
-SELECT * FROM churn.customers; ```
+SELECT * FROM churn.customers;
+```
 
