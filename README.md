@@ -9,8 +9,8 @@ This project explores customer churn patterns using SQL queries on a banking dat
 ## Project Structure
 
 1. Database Setup
-* Database creation: Created a database named churn.
-* Table Creation: A table named customers is created to store the churn customers data.
+* Database creation: Created a database named `churn`.
+* Table Creation: A table named `customers` is created to store the churn customers data.
   
 - **Database Creation:**  
   Created a database named `churn`.
@@ -40,4 +40,7 @@ CREATE TABLE customers (
     Exited INT
 );
 ```
+-- Checking my data 
+```sql
+SELECT * FROM churn.customers; ```
 
